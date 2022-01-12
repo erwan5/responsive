@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nom a metre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function showResponsiveMenu() {
+    var menu = document.getElementById("topnav_responsive_menu");
+    var icon = document.getElementById("topnav_hamburger_icon");
+    var root = document.getElementById("root");
+    if (menu.className === "") {
+      menu.className = "open";
+      icon.className = "open";
+      root.style.overflowY = "hidden";
+    } else {
+      menu.className = "";
+      icon.className = "";
+      root.style.overflowY = "";
+    }
+  }
+    </script>
+<div id="root">
+        <div id="topnav" class="topnav">
+          <a id="home_link" class="topnav_link" href="">Logo</a>
+          <h1 id="menu">Menu</h1>
+
+          <!-- Classic Menu -->
+          <nav role="navigation" id="topnav_menu">
+            <a class="topnav_link" href=""></a>
+            <a class="topnav_link" href=""></a>
+            <a class="topnav_link" href=""></a>
+            <a class="topnav_link" href=""></a>
+            <a class="topnav_link" href=""></a>
+            <a class="topnav_link" href=""></a>
+            <a class="topnav_link" href=""></a>
+          </nav>
+
+          <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <!-- Some spans to act as a hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <!-- Responsive Menu -->
+          <nav role="navigation" id="topnav_responsive_menu">
+            <ul>
+              <li><a href="">Membres supérieurs</a></li>
+              <li><a href="">Membres inférieurs</a></li>
+              <li><a href="">Pathologie du dos</a></li>
+              <li><a href="">Sportif</a></li>
+              <li><a href="">Autres spécialités</a></li>
+              <li><a href="">Cabinet</a></li>
+              <li><a href=" https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website%22%3EPrendre rendez-vous"</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+</body>
+</html>
